@@ -27,6 +27,7 @@ class AddCountryCodeIdToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->dropForeign(['country_code_id']);
             $table->dropColumn('country_code_id');
         });
     }
