@@ -1,0 +1,140 @@
+.cffree {
+	width: 800px;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+.cffree_td {
+	padding:4px;
+	font-size:12px;
+}
+.cffree p {
+	padding:4px;
+}
+.cffree label {
+	padding:4px;
+}
+label {
+ padding-right:10px
+}
+.required {
+ font-weight:bold;
+ color:#FF0000;
+}
+.required_star {
+ font-weight:bold;
+ color:#F00;
+}
+.not-required {
+ font-weight:normal
+}
+.head
+{
+color:#000099;
+font-family: Arial,Verdana,Helvetica,sans-serif;
+font-size: 20px;
+font-weight: normal;
+margin: 0 3px 3px 0;
+padding: 0 3px 3px 0;
+text-align: left; 
+border-bottom:#000099 2px solid;
+}.page_head
+{
+color:#000099;
+font-family: Arial,Verdana,Helvetica,sans-serif;
+font-size: 20px;
+font-weight: normal;
+margin: 0 3px 3px 0;
+padding: 0 3px 3px 0;
+text-align: center; 
+
+}
+.label
+{
+color:#000099;
+font-size: 12px;
+font-family:Arial, Helvetica, sans-serif;
+}
+.label_head
+{
+color:#000099;
+font-size: 14px;
+font-family:Arial, Helvetica, sans-serif;
+height:50px;
+}
+/*input, select
+{
+
+}*/
+.input_text
+{
+/*background: none repeat scroll 0 0 #E6E4E4;*/
+border: 1px solid #000099;
+color: #31353A;
+font-family: Arial,Verdana,Helvetica,sans-serif;
+font-size: 10px;
+width:130px;
+}
+.button
+{
+background-color:#000099;
+color:#FFFFFF;
+font-weight:bold;
+
+}
+textarea {
+	border-color: #000099;
+	border-style: solid;
+	border-width: thin;
+	padding: 3px;
+}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	behavior: url(ie-css3.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #1570cd;
+}.myButton:hover {
+	background-color:#1e62d0;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+input:disabled {
+    opacity: 0.5;
+}
+
+input[type= 'text'], input[type= 'number'], textarea {
+    border: 1px solid #00a64e !important;
+}
+
+.contentheadline{
+	padding: 20px;
+}
+.contenttext{
+	padding: 0px 20px 0 20px;
+}
+
+.cnav{
+	background-color: white;
+
+	color: #767a7d;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:  #767a7d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}

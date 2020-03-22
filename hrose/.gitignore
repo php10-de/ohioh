@@ -1,0 +1,14 @@
+.idea
+nbproject
+logs
+red_button
+/var/cache/
+/var/logs/
+db/db_connect.php
+inc/de.inc.php
+inc/serial.txt
+inc/sql/hroses/
+inc/settings.inc.php
+array.txt
+/var/media
+ilulisap_itsirnga

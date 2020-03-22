@@ -1,0 +1,491 @@
+/* -----------------------------------------------------------------------------
+  Allgemeine Styleangaben
+------------------------------------------------------------------------------*/
+
+body{
+  /* BODY */
+  font-size:100.01%;
+  font-size: 1em;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  /* HTML (ntig fr ie laut internet */
+  font-size: 100.01%;
+}
+
+A{
+  /* allgemeines ausschalten von text hervorhebungen bei links */
+  text-decoration: none;
+  color: #cc0066;
+}
+
+.main{
+  /* Haupttabelle */
+  width: 61.125em;
+  height: 45.4375em;
+}
+
+.extern_table {
+    width: 10em;
+    height: 10em;
+}
+
+/* -----------------------------------------------------------------------------
+  Navigationen
+------------------------------------------------------------------------------*/
+.leftnav{
+  /* linke spalte */
+  height: 100%;
+  font-size: 1em;
+}
+
+.headleft{
+  /* links oben:  logo */
+  width: 13.75em;
+  height:  7.5625em;
+  padding-left: 2.8125em;
+  vertical-align: bottom;
+}
+
+.headright{
+  /* rechts oben: schriftlogo */
+  width: 37.375em;
+  height:  7.5625em;
+  padding-right: 2.8125em;
+  padding-bottom: 0.5em;
+  vertical-align: bottom;
+}
+
+.headmsg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav1{
+  /* Navigation links oben */
+  width: 13.75em;
+  height: 7.1em;
+  padding-left: 2.8125em;
+  vertical-align: bottom;
+  
+}
+#nav1text{
+  /* Navigationstext von Nav 1 */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #767a7d;
+  font-size: 1em;
+  line-height: 1.625em;
+  padding-bottom: 0.3em;
+}
+
+.nav2{
+  /* Navigation rechts oben*/
+  width: 37.375em;
+  height: 7.1em;
+  padding-left: 2.8125em;
+  vertical-align: bottom;  
+}
+
+#nav2text{
+  /* Navigationstext von Nav 2 */
+  padding-bottom: 1.3em;
+  line-height: 1.5384em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #767a7d;
+  font-size: 0.8125em;
+}
+
+.nav3{
+  /* Navigation links in der mitte */
+  width: 13.75em;
+  /*height: 27.6875em;*/
+  padding-left: 2.8125em;
+  /*vertical-align: top;*/ 
+}
+.nav3map{
+  /* Navigation links in der mitte fr JavaScript Karte*/
+  width: 13.75em;
+  height: 32.125em;
+  padding-left: 2.8125em;
+}
+
+#nav3text{
+  /* Navigationstext von Nav 3 */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #767a7d;
+  font-size: 0.6875em;
+  padding-top: 1.7272em;
+  line-height: 1.5345em;
+  vertical-align: top;
+}
+#nav3textmap{
+  /* Navigationstext links in der mitte fr JavaScript Karte*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #767a7d;
+  font-size: 0.6875em;
+  padding-top: 1.35em;
+  line-height: 1.5345em;
+  vertical-align: top;
+}
+
+#nav5text{
+  /* Navigations + Navigationstext in der mitte unten*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 0.6875em;
+  padding-bottom: 3.4545em;
+  line-height: 1.5345em;
+  vertical-align: bottom;
+    position: fixed;
+    bottom: 0;
+}
+
+.footleft{
+  /* Bereich unten links ohne Inhalt */
+  width: 13.75em;
+  padding-left: 2.8125em;
+}
+
+.footnav{
+  /* Navigation unten rechts */
+  width: 37.375em;
+  padding-left: 2.8125em;
+  vertical-align: top; 
+}
+
+#foottext{
+  /* Navigationstext fr footnav */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767a7d;
+  font-size: 0.75em;
+  padding-top: 0.5em;
+  word-spacing: 1.775em;
+  white-space:nowrap;
+}
+
+.fontscale{
+  /* Die beiden A fr die Schriftgre sollen nicht so weit auseinandersein wie der foottext */
+  word-spacing: normal;
+}
+
+
+/* -----------------------------------------------------------------------------
+  Inhaltsbereich
+------------------------------------------------------------------------------*/
+
+.content{
+  /* Bereich in der Mitte fr normalen Text*/
+  width: 47.375em;
+  height: 27.6875em;
+  padding-left: 2.8125em;
+  vertical-align: top; 
+}
+
+.contentmap{
+  /* Bereich in der Mitte fr normalen die JavaScript Karte*/
+  width: 37.375em;
+  height: 36.125em;
+  padding-left: 2.8125em;
+  vertical-align: top; 
+}
+
+.contentheadline{
+  /* berschriften im Contentbereich */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 1em;
+  font-weight: bold;
+  /*padding-top: 1.0555em;*/
+}
+.contentheadline2{
+  /* unterberschriften im Contentbereich ??? */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+  /*padding-top: 1.0555em;*/
+}
+
+.contenttext{
+  /* Normaler Text */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 0.8125em;
+  text-align: left;
+}
+
+.contentlink{
+  /* Link im Text */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 0.8125em;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.contentpic{
+  /* Bereich in der Mitte fr die Seiten mit Bild */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 0.8125em;
+  text-align: justify;
+  padding-top: 0.2307em;
+}
+
+.contentspace{
+  /* Abstand in der Mitte zur oberen Linie, ntig da die Schriftgre sind ndert */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+  height: 0.87em;
+}
+
+.map{
+  /* berlagerungsbilder der Gemeindekarte */
+  z-index: 2;
+  position:absolute;
+  visibility: hidden;
+}
+
+.halbeleerzeile{
+  /* Abstand einer halbe Leerzeil */
+  height: 0.5313em; 
+  padding: 0em;
+  margin: 0em;
+}
+
+/* -----------------------------------------------------------------------------
+  Liste
+------------------------------------------------------------------------------*/
+
+.tableheadline {
+    font-weight: bold;
+}
+
+table .bw {
+    line-height: 2em;
+}
+
+tr .head th {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+tr .head th input {
+    margin-bottom: 7px;
+}
+
+tr .dotted td {
+    border-bottom: dotted 1px black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td .grey {
+    background-color: #ebebec;
+}
+
+tr .headline td {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    font-weight: bold;
+}
+
+tr .dottedlast td {
+    border-bottom: solid 1px black;
+}
+
+td .col2 {
+    background-color: #ebebec;
+}
+
+table .bw img {
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+
+td.editable input, .chglog td.editable textarea, td.editable .input { border:none; background:transparent; }
+td.editable input:hover, td.editable textarea:hover, td.editable .input:hover { background-color:#d6e8ff; }
+td.editable input.edit, td.editable textarea.edit { padding:3px; border:1px solid #555; background-color:#d6e8ff; -moz-box-shadow:1px 1px 5px rgba(0,0,0,.3) inset; }
+td.editable .tick { cursor:pointer; }
+td.editable .sub-button  { position:relative; border:1px solid #33648E; font-family:Arial, Helvetica, sans-serif; font:16px; font-weight:bold; background: #4C7EA9 url(../img/overlay-button.png) repeat-x; display: inline-block; padding:8px 10px; color: #fff; text-decoration: none;	font-weight: bold; box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); text-shadow: 0 1px 1px rgba(0,0,0,0.4); cursor: pointer; }
+td.editable sub-button:hover { background-color:#d6e8ff; }
+td.editable button:hover { background-color:#fff; }
+td.edit input.inactive { background-color:#DDD; }
+td.edit select.inactive { background-color:#DDD; }
+td.editable.status input { width:16px; }
+
+/* -----------------------------------------------------------------------------
+  Formular
+------------------------------------------------------------------------------*/
+
+.formLayout {
+    line-height: 2em;
+    background-color: #f3f3f3;
+    border: solid 1px #a1a1a1;
+    padding: 10px;
+    width: 40em;
+}
+
+.formLayout label
+{
+    display: block;
+    width: 11.91em;
+    float: left;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.formLayout input, .formLayout select
+{
+    display: block;
+    width: 24.125em;
+    float: left;
+    margin-top: 4px;
+}
+
+.formLayout textarea {
+  width: 20.4em;
+  height:10em;
+}
+
+.formLayout br
+{
+    clear: left;
+}
+
+.formright{
+  /* Rechte Spalte im Kontaktformular */
+  vertical-align: bottom;
+  text-align: right;
+  width: 6.3em;
+}
+
+.formtext{
+  /* Linke Spalte im Kontaktformular (Text)*/
+  vertical-align: top;
+  width: 7.91em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+.forminput{
+    width: 14.125em;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.fordmLayout input{
+  /* Inputfeld */
+  width: 100%;
+}
+
+input[required] {
+    border: 1px solid #5F5F5F;
+}
+
+/* -----------------------------------------------------------------------------
+  Formatierungsklassen
+------------------------------------------------------------------------------*/
+
+.cursor{
+  /* Anzeigen des normalen Pfeilsymbols wenn man ber den link ist */
+  cursor: default;
+}
+
+.pdflink{
+  /* Link zu einem PDF */
+  color: #000000;
+}
+.pfeil{
+  /* Pfeilbild */
+  border: 0em;
+}
+.kb{
+  /* KB Anzeige fr PDF Link */
+  color: #000000;
+  font-size: 0.6875em;
+}
+
+#Aklein{
+  /* Schriftgre verkleinern */
+  font-size: 0.6666em;
+  color: #767a7d;
+}
+
+#Agross{
+  /* Schriftgre vergrern */
+  font-weight: bold;
+  color: #767a7d;
+}
+
+.black{
+  /* Farbe auf schwarz setzen */
+  color: #000000;
+}
+
+.grau{
+  /* Farbe auf grau setzen */
+  color: #767a7d;
+}
+
+.red{
+  /* Farbe auf rot setzen #e23828 */
+  color: #cc0066;
+}
+
+.green{
+  /* Farbe auf rot setzen #e23828 */
+  color: #33cc33;
+}
+
+#opened{
+  position: absolute; 
+  visibility:hidden; 
+  overflow:auto; 
+  height: 24.5454em; 
+  width: 26.3636em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767a7d;
+  cursor: pointer;
+  font-size: 0.6875em;
+}
+#closed{
+  position: absolute; 
+  visibility: visible; 
+
+  width: 26.3636em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767a7d;
+  cursor: pointer;
+  font-size:  0.6875em;
+}
+
+.listmenuicon {
+    margin-top:1px;margin-bottom:-1px;
+}
+
+
+.selected{
+    background-color: #ebebec;
+}
+
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('Myriad_Pro_Bold_Condensed_Italic.ttf');
+}
