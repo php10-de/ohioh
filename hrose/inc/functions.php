@@ -7,7 +7,7 @@ function html($var) {
     return htmlentities($var, ENT_QUOTES, 'UTF-8');
 }
 
-if (file_exists('de.inc.php')) {
+if (file_exists(__DIR__.'/de.inc.php')) {
     require_once 'de.inc.php';
 }
 require 'translate.php';

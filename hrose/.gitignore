@@ -2,6 +2,7 @@
 nbproject
 logs
 red_button
+red_button_enc
 /var/cache/
 /var/logs/
 db/db_connect.php
