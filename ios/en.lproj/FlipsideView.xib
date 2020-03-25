@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlipsideViewController">
+            <connections>
+                <outlet property="distanceFilterSlider" destination="47" id="55"/>
+                <outlet property="distanceFilterSliderLabel1" destination="48" id="56"/>
+                <outlet property="distanceFilterSliderLabel2" destination="49" id="57"/>
+                <outlet property="distanceFilterSliderLabel3" destination="53" id="58"/>
+                <outlet property="distanceFilterSliderLabel4" destination="50" id="59"/>
+                <outlet property="distanceFilterSwitch" destination="45" id="60"/>
+                <outlet property="distanceFilterValueLabel" destination="51" id="61"/>
+                <outlet property="urlTextField" destination="69" id="74"/>
+                <outlet property="view" destination="4" id="66"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4" userLabel="Flipside View">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="585"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="40">
+                    <rect key="frame" x="0.0" y="44" width="412" height="44"/>
+                    <items>
+                        <navigationItem title="Send Options" id="41">
+                            <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="42">
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="-1" id="43"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="URL:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="44">
+                    <rect key="frame" x="16.5" y="97" width="41" height="20"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                    <rect key="frame" x="347" y="215" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchAction:" destination="-1" eventType="valueChanged" id="63"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Distance Filter:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                    <rect key="frame" x="16.5" y="220.5" width="123" height="20"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                    <rect key="frame" x="14.5" y="183" width="383.5" height="31"/>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="62"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="1" lineBreakMode="tailTruncation" minimumFontSize="10" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48">
+                    <rect key="frame" x="16.5" y="260" width="8" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="10" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49">
+                    <rect key="frame" x="122.5" y="260" width="16" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="10 Meters" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51">
+                    <rect key="frame" x="342.5" y="295.5" width="53.5" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="100" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53">
+                    <rect key="frame" x="257" y="260" width="23.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                    <rect key="frame" x="16.5" y="126" width="379.5" height="34"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="done"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" text="" lineBreakMode="tailTruncation" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75">
+                    <rect key="frame" x="16.5" y="176" width="379.5" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="leopardin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="76">
+                    <rect key="frame" x="72" y="392" width="268" height="140"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="1000" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50">
+                    <rect key="frame" x="364.5" y="260" width="31.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="75" firstAttribute="top" secondItem="69" secondAttribute="bottom" multiplier="1.1" id="4It-nS-dHQ"/>
+                <constraint firstItem="47" firstAttribute="leading" secondItem="75" secondAttribute="leading" id="90u-yD-HJJ"/>
+                <constraint firstItem="76" firstAttribute="centerX" secondItem="XFv-uE-c4z" secondAttribute="centerX" id="9Ui-9u-XBi"/>
+                <constraint firstItem="76" firstAttribute="width" secondItem="4" secondAttribute="width" multiplier="0.65" id="9gy-EY-4CW"/>
+                <constraint firstItem="40" firstAttribute="width" secondItem="4" secondAttribute="width" id="A7J-ah-Xte"/>
+                <constraint firstItem="44" firstAttribute="top" secondItem="40" secondAttribute="bottom" multiplier="1.1" id="CR0-Nf-egP"/>
+                <constraint firstItem="44" firstAttribute="leading" secondItem="4" secondAttribute="trailing" multiplier="0.04" id="EFg-lL-d0t"/>
+                <constraint firstItem="69" firstAttribute="trailing" secondItem="75" secondAttribute="trailing" id="HY0-3H-qKi"/>
+                <constraint firstItem="50" firstAttribute="trailing" secondItem="45" secondAttribute="trailing" id="IOX-e7-OAL"/>
+                <constraint firstItem="47" firstAttribute="trailing" secondItem="45" secondAttribute="trailing" id="Kz0-oz-YbK"/>
+                <constraint firstItem="50" firstAttribute="leading" secondItem="53" secondAttribute="trailing" multiplier="1.3" id="Lje-3Z-nou"/>
+                <constraint firstItem="51" firstAttribute="top" secondItem="50" secondAttribute="bottom" multiplier="1.07" id="NYN-9Q-eaZ"/>
+                <constraint firstItem="69" firstAttribute="top" secondItem="44" secondAttribute="bottom" multiplier="1.08" id="ODM-Y1-ed6"/>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="75" secondAttribute="leading" id="OmR-g5-AYV"/>
+                <constraint firstItem="40" firstAttribute="top" secondItem="XFv-uE-c4z" secondAttribute="top" id="RS9-dq-daC"/>
+                <constraint firstItem="75" firstAttribute="trailing" secondItem="47" secondAttribute="trailing" id="YEm-ID-VDT"/>
+                <constraint firstItem="XFv-uE-c4z" firstAttribute="bottom" secondItem="76" secondAttribute="bottom" multiplier="1.1" id="a3U-Ze-8vD"/>
+                <constraint firstItem="75" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="bKx-on-kMt"/>
+                <constraint firstItem="49" firstAttribute="centerY" secondItem="48" secondAttribute="centerY" id="bxq-LD-Hzq"/>
+                <constraint firstItem="48" firstAttribute="leading" secondItem="46" secondAttribute="leading" id="dEX-QB-7vt"/>
+                <constraint firstAttribute="trailing" secondItem="45" secondAttribute="trailing" multiplier="1.04" id="eRK-Cs-f5k"/>
+                <constraint firstItem="50" firstAttribute="centerY" secondItem="53" secondAttribute="centerY" id="heT-7a-o1w"/>
+                <constraint firstItem="47" firstAttribute="top" secondItem="75" secondAttribute="bottom" multiplier="1.04" id="k3a-WE-rJO"/>
+                <constraint firstItem="51" firstAttribute="trailing" secondItem="50" secondAttribute="trailing" id="kvJ-PC-FXs"/>
+                <constraint firstItem="45" firstAttribute="centerY" secondItem="46" secondAttribute="centerY" id="myQ-fL-0sc"/>
+                <constraint firstItem="69" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="oYu-cq-6rM"/>
+                <constraint firstItem="48" firstAttribute="top" secondItem="46" secondAttribute="bottom" multiplier="1.08" id="p5J-D0-UzK"/>
+                <constraint firstItem="53" firstAttribute="centerY" secondItem="49" secondAttribute="centerY" id="r0i-4t-S3o"/>
+                <constraint firstItem="49" firstAttribute="leading" secondItem="48" secondAttribute="trailing" multiplier="5" id="xC0-Qe-Y6f"/>
+                <constraint firstItem="40" firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="xmU-fK-WuL"/>
+                <constraint firstItem="46" firstAttribute="top" secondItem="47" secondAttribute="bottom" multiplier="1.03" constant="1" id="zX4-VA-dnz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XFv-uE-c4z"/>
+            <point key="canvasLocation" x="100.00000000000001" y="95.424107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leopardin.jpg" width="210" height="140"/>
+    </resources>
+</document>

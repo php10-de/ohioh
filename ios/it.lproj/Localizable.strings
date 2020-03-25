@@ -1,0 +1,20 @@
+﻿/* Units */
+"MeterPlural" = "metri";
+"MeterSingular" = "metro";
+
+/* Start & Stop button labels */
+"StartButton" = "Inizio";
+"StopButton" = "Stop";
+
+/* Data unavailable messages */
+"LatLongUnavailable" = "Non ci sono dati localitá disponibile";
+
+"MeterAccuracyFormat" = "Precisione: %.0f metri";
+
+/* Error messages */
+"NoLocationServices" = "Errore di posizione";
+"LocationDenied" = "Errore di posizione";
+"LocationUnknown" = "Errore di posizione";
+"GenericLocationError" = "Errore di posizione";
+"ConnectionError" = "Errore connessione";
+"LoadFailed" = "Errore caricamento";
